@@ -1,8 +1,18 @@
-# Fashion_Runway_Show_Archive
-A webscraped archive of catwalk images using Beautiful Soup and Selenium.
+# RunwayRef
+A model that returns an originality index and the top N similar articles from runway history for a given fashion article.
 
+Summary:
 
-Abstract:
+Many of the world's greatest creative minds agree that creative products are never totally original. Here's what some famous ones think:
 
-There is no data in the repository. You must configure your environment, then run main.py. It will generate a "data" folder containing M thumbnail images (106x160 pixels, jpeg format) from thousands of designers (not commercially oriented companies for mass consumers), for women and men, from 1995 to 2020. This dataset is intended to be used in conjunction with a pretrained/modified convolutional neural network that can take a new catwalk image, perform segmentation to separate the clothing from the model, then run it against this database, which is also to be segmented in the same way, and return an "originality index", which is yet to be mathematically defined, and a list of the top correlating images (designs) from the archives. Since fashion trends are rarely totally new, but often cyclical over decades, there should, in principle, exist past images/designs which a human would agree are highly correlated. The end product would ideally be an AI manifestation of Diet Prada (https://www.dietprada.com/). Not as powerful as the two humans that run it, but still useful.
+"Art is theft." - Pablo Picasso
+
+"The only art I’ll ever study is stuff that I can steal from.” - David Bowie
+
+"My hobbie (one of them anyway)…is using a lot of scotch tape… 
+My hobbie is to pick out different things during what I read 
+and piece them together and make a little story of my own.” - Louis Armstrong
+
+Louis Armstrong's framing of the creative process perhaps best captures the subtlety of this project's intention. That is, RunwayRef's originality index and list of similar fashion designs from the past isn't targeted at "cancelling" designers or calling designers out for copying, but rather to aid in the early stages of the design process - to help the designer tape together pieces from different stories to create a new one. The business interest would be more rapid design prototyping with a higher degree of integrity.
+
 
