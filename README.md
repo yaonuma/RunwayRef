@@ -3,7 +3,7 @@ A model that returns an originality index and the top N similar articles from ru
 
 Summary:
 
-Many of the world's greatest creative minds agree that creative products are never totally original. Here's what some famous ones think:
+Many great creative minds agree that creative products are never totally original. Here's what some famous ones think:
 
 "Art is theft." - Pablo Picasso
 
@@ -15,4 +15,10 @@ and piece them together and make a little story of my own.” - Louis Armstrong
 
 Louis Armstrong's framing of the creative process perhaps best captures the subtlety of this project's intention. That is, RunwayRef's originality index and list of similar fashion designs from the past isn't targeted at "cancelling" designers or calling designers out for copying, but rather to aid in the early stages of the design process - to help the designer tape together pieces from different stories to create a new one. The business interest would be more rapid design prototyping with a higher degree of integrity.
 
+The first attempt implementation will look like the following, at a high level:
 
+1. Take an image of a model wearing the design, and feed it to the model
+2. The model will segment the image, separating the clothing from everything that is not the clothing. The clothing will be the "foreground"
+3. The model will perform classification on the clothing. 
+4. Based on the category, the model will search through a subset of the reference clothing database, which has also been segmented and classified, and find the most similar articles of clothing, including designer name and year/season. Based on this information, a composite "originality index" will also be computed.
+#. All meanwhile, webscraping to build the reference database, and searching for good labelled datasets to train the lower dense layers on. DeepFashion2 comes to mind.
