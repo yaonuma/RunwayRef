@@ -21,4 +21,4 @@ The first attempt implementation will look like the following, at a high level:
 2. The model will segment the image, separating the clothing from everything that is not the clothing. The clothing will be the "foreground"
 3. The model will perform classification on the clothing. 
 4. Based on the category, the model will search through a subset of the reference clothing database, which has also been segmented and classified, and find the most similar articles of clothing, including designer name and year/season. Based on this information, a composite "originality index" will also be computed.
-1-5, concurrent. All meanwhile, webscraping to build the reference database, and searching for good labelled datasets to train the lower dense layers on. DeepFashion2 comes to mind.
+5. (1-5, concurrently) All meanwhile, webscraping to build the reference database, and searching for good labelled datasets to train the lower dense layers on. DeepFashion2 comes to mind.
