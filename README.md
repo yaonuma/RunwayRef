@@ -3,7 +3,7 @@ A model that returns an originality index and the top N similar articles from ru
 
 Summary:
 
-Many great creative minds agree that creative products are never totally original. Here's what some famous ones think:
+Creative minds are never totally original. Some famous people agree:
 
 "Art is theft." - Pablo Picasso
 
